@@ -1,5 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import  App  from './components/App';
+import App from './App';
+import { createBrowserHistory } from 'history';
+import configureStore from './configureStore';
+const history = createBrowserHistory();
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const initialState: any = {};
+const store = configureStore(history, initialState);
+
+ReactDOM.render(
+    <App store={store} history={history} />,
+    document.getElementById('root'));
