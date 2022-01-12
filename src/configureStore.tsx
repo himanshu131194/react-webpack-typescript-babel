@@ -14,4 +14,5 @@ export default function configureStore(
        initialState,
        applyMiddleware(routerMiddleware(history), thunk) 
     )
+    return store;
 }

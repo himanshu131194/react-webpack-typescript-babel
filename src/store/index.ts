@@ -4,7 +4,7 @@ import { connectRouter } from "connected-react-router";
 import { History } from "history";
 
 // import inventorySaga from "./inventory/sagas";
-import { InventoryReducer } from "./invencd tory/reducer";
+import { InventoryReducer } from "./inventory/reducer";
 import { InventoryState } from "./inventory/types";
 
 // import cartSaga from "./cart/sagas";
