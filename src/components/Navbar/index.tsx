@@ -56,8 +56,14 @@ const Navbar: React.FC<AllProps> = ({ data, children }) => {
           <Link to="/">ECart</Link>
         </NavHeader>
         <NavCart>
-          <Link to="/cart">
-            Cart <CartSpan>{data.items.length}</CartSpan>
+          <Link to="/account-login">
+            Login <CartSpan>{data.items.length}</CartSpan>
+          </Link>
+          <Link to="/account-signup">
+            Signup <CartSpan>{data.items.length}</CartSpan>
+          </Link>
+          <Link to="/dashboard">
+            Dashboard <CartSpan>{data.items.length}</CartSpan>
           </Link>
         </NavCart>
       </NavContainer>
